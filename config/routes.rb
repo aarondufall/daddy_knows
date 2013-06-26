@@ -1,4 +1,9 @@
 DaddyKnows::Application.routes.draw do
+  devise_for :users
+
+  #TODO: Change to question index 
+  root :to => "home#index" 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
