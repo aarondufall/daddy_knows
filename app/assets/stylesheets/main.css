@@ -1,0 +1,56 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Ubuntu,"Futura",Futura,"Dosis",Arial,sans-serif;
+	color: #3e3e3e;
+}
+
+body {
+	margin: 0 0 0 0;
+	font-family: Arial,sans-serif;
+}
+
+header {
+	border-bottom: 1px solid rgb(142, 142, 142);
+  height: 40px;
+}
+
+nav {
+	width: 900px;
+	margin: auto;
+	line-height: 40px;
+}
+
+nav ul {
+	display: inline-block;
+	list-style: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  float: right;
+
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right:20px;
+}
+
+header a {
+	text-decoration: none;
+}
+
+#logo > h1 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	display: inline-block;
+	padding-left: 20px;
+  font-size: 16pt;
+  float: left;
+}
