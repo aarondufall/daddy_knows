@@ -4,6 +4,9 @@ class CreateAnswers < ActiveRecord::Migration
       t.text :content,		:null => false
       t.integer	:user_id
       t.integer :question_id
+      t.boolean :correct, :default => false
+      	
+      end
  
       t.timestamps
     end
