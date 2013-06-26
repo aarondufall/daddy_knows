@@ -1,4 +1,6 @@
 DaddyKnows::Application.routes.draw do
+  devise_for :users
+
   #TODO: Change to question index 
   root :to => "home#index" 
 
