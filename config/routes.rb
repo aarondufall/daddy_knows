@@ -1,4 +1,7 @@
 DaddyKnows::Application.routes.draw do
+  #TODO: Change to question index 
+  root :to => "home#index" 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
