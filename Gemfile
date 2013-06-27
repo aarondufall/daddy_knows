@@ -23,11 +23,14 @@ end
 
 gem 'jquery-rails'
 
+gem 'nokogiri', '1.5.9'
+
 group :test, :development do
 	gem 'rspec-rails'
 	gem 'factory_girl_rails'
 	gem 'faker'
 	gem 'shoulda-matchers'
+	gem 'capybara'
 end
 
 # To use ActiveModel has_secure_password
