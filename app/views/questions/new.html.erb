@@ -4,7 +4,7 @@
 	<%= form_for @question do |f| %>
 		<%= f.label :title %>
 		<%= f.text_field :title, size: 135 %>
-		<%= f.label :quesition %>
+		<%= f.label :question %>
 		<%= f.text_area :content, :class => "tinymce", :rows => 40, :cols => 120 %>
 		<%= f.submit %>
 	<% end %>
