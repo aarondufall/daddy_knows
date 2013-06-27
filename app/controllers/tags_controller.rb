@@ -4,6 +4,6 @@ class TagsController < ApplicationController
 	end
 
 	def show
-		@tags = Tag.find_all_by_question_name(params[:name])
+		@tags = Tag.find_all_by_title(params[:title])
 	end
 end

@@ -8,7 +8,7 @@ DaddyKnows::Application.routes.draw do
 
   get '/tags' => 'tags#index'
 
-  get 'question/:name/tags/' =>  'tags#show'
+  get '/tags/:title' =>  'tags#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
