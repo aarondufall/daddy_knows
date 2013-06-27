@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 gem 'devise'
+gem 'tinymce-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,12 +23,15 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'nokogiri', '1.5.9'
 
 group :test, :development do
 	gem 'rspec-rails'
 	gem 'factory_girl_rails'
 	gem 'faker'
 	gem 'shoulda-matchers'
+	gem 'capybara'
+	gem 'selenium-webdriver'
 end
 
 # To use ActiveModel has_secure_password
