@@ -2,34 +2,20 @@ require 'spec_helper'
 
 describe Question do
 
-  before(:each) do
-    @question = Question.new(:title => 'jquery question', :content => 'jquery not responding to ajax')
-  end
+  it { should be_instance_of(Question) }
 
-  it "it should be valid when new" do
-    @question.should be_valid
-  end
-  
-  it "it should require a title" do
-    @question.title = ""
-    @question.should_not be_valid
-  end
+  it { should belong_to(:user).class_name(User) }
+  it { should have_many(:answers) }
+  it { should have_many(:question_tags) }
+  it { should have_many(:tags).through(:question_tags) }
+  it { should validate_presence_of(:title) }
+  it { should validate_presence_of(:content) }
 
-  it "it should require content" do
-    @question.content = ""
-    @question.should_not be_valid
-  end
-
-  describe '#capitalize_title' do
-    #tests failing here. Need to look in more.
-    before(:each) do
-      @question2 = Question.new(:title => 'jquery', :content => 'jquery not responding to ajax')
-    end
-
-    it "it should capitalize the title" do
-      @question2.title.should == "Jquery question"
+  context '#capitalize_title' do
+    it "it should capitalize the title" do 
+      question = Question.create(:title => 'jquery question', :content => 'jquery not responding to ajax')
+      question.title.should eq "Jquery question"
     end
   end
 
-  
 end

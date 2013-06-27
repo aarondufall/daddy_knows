@@ -2,17 +2,15 @@ require 'spec_helper'
 
 describe Answer do 
 
-  before(:each) do
-    @answer = Answer.new(:content => 'Daddy knows is awesome')
-  end
+  it { should be_instance_of(Answer) }
 
-  it "it should be valid when new" do
-    @answer.should be_valid
-  end
-  
+  it { should belong_to(:question).class_name(Question) }
+  it { should belong_to(:user).class_name(User) }
+
   it "it should require content" do
-    @answer.content = ""
-    @answer.should_not be_valid
+    answer = Answer.new(:content => 'Daddy knows is awesome')
+    answer.content = ""
+    answer.should_not be_valid
   end
 
 
