@@ -1,0 +1,11 @@
+<%= tinymce_assets %>
+
+<div class="editor">
+	<%= form_for @question do |f| %>
+		<%= f.label :title %>
+		<%= f.text_field :title, size: 135 %>
+		<%= f.label :quesition %>
+		<%= text_area_tag :editor, "", :class => "tinymce", :rows => 40, :cols => 120 %>
+		<%= f.submit %>
+	<% end %>
+</div>
