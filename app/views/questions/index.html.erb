@@ -2,7 +2,7 @@
 	<% @questions.each do |question| %>
 		<li>
 			<%= question.title %><br>
-			<%= question.content %>
+			<%= raw question.content %>
 		</li>
 		<hr>
 	<% end %>
