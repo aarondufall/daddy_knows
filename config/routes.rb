@@ -12,15 +12,15 @@ DaddyKnows::Application.routes.draw do
 
   
   get '/questions' => 'questions#index'
-  get 'questions/new' => 'questions#new'
+  get '/questions/new' => 'questions#new'
   post '/questions' => 'questions#create'
 
   get '/questions/:id' =>'questions#show'
   get '/questions/:id/edit' =>'questions#edit'
   put '/questions/:id' =>'questions#update'
-  delete 'questions/:id' => 'questions#delete'
+  delete '/questions/:id' => 'questions#delete'
 
-  get 'questions/new'
+  get '/questions/new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
