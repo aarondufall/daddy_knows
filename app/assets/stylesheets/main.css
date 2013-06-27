@@ -6,6 +6,10 @@ textarea {
     color: #222;
 }
 
+ul {
+	list-style: none;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: Ubuntu,"Futura",Futura,"Dosis",Arial,sans-serif;
@@ -59,3 +63,105 @@ header a {
 	width:700px;
 	margin: auto;
 }
+
+.question_info {
+	border-bottom: 1px solid;
+	margin-bottom: 20px;
+	clear:both;
+}
+
+.stat-list {
+	display: inline-block;
+}
+
+.question-body {
+	display: inline-block;
+}
+
+.votes-circle{
+	width:60px;
+	height:60px;
+	border-radius:30px;
+	font-size:20px;
+	color:#444;
+	line-height:60px;
+	text-align:center;
+	border:1px solid#13c4a5;
+}
+
+.answers-circle{
+	width:60px;
+	height:60px;
+	border-radius:30px;
+	font-size:20px;
+	color:#444;
+	line-height:60px;
+	text-align:center;
+	border:1px solid #5191d1;
+}
+
+.stats {
+	width:60px;
+	margin:0 0 0 0;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.stat-label {
+	margin:auto;
+	text-align: center;
+}
+
+.question-title {
+	height: 60px;
+	width: 600px;
+	font-size: 20pt;
+	margin-left: 20px;
+}
+
+.question-title a {
+	color:#657483;
+	text-decoration: none;
+}
+
+
+.content {
+	width: 900px;
+	margin: auto;
+}
+
+.info {
+	padding-top: 10px;
+	display: inline-block;
+}
+
+#menu {
+	float:right;
+}
+
+
+/*tags */
+
+
+
+
+.tags li, .tags a{
+float:right;
+height:24px;
+line-height:24px;
+position:relative;
+font-size:14px;
+}
+
+.tags a{
+margin-bottom: -20px;
+margin-left:20px;
+padding:0 10px 0 12px;
+background:#233445;
+color:#fff;
+text-decoration:none;
+-moz-border-radius:4px;
+-webkit-border-radius:4px; 
+border-radius:4px;
+} 
+
