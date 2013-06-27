@@ -22,6 +22,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'nokogiri', '1.5.9'
 
 group :test, :development do
 	gem 'rspec-rails'
