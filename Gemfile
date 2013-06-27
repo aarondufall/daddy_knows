@@ -30,6 +30,7 @@ group :test, :development do
 	gem 'faker'
 	gem 'shoulda-matchers'
 	gem 'capybara'
+	gem 'selenium-webdriver'
 end
 
 # To use ActiveModel has_secure_password
