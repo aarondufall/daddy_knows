@@ -1,8 +1,9 @@
 DaddyKnows::Application.routes.draw do
-  devise_for :users
 
   #TODO: Change to question index 
-  root :to => "questions#index" 
+  root :to => "questions#index"
+  devise_for :users
+  resources :questions 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
