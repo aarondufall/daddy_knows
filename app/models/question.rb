@@ -14,7 +14,7 @@ class Question < ActiveRecord::Base
   before_save :capitalize_title
 
   def capitalize_title
-    self.title = self.title.capitalize 
+    self.title.capitalize!
   end
 
 	
