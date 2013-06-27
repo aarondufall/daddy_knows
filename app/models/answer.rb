@@ -1,5 +1,8 @@
 class Answer < ActiveRecord::Base
-	belongs_to :question
+	
+  attr_accessible :content
+
+  belongs_to :question
 	belongs_to :user
 
   validates :content, :presence => true
