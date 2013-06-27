@@ -54,3 +54,8 @@ header a {
   font-size: 16pt;
   float: left;
 }
+
+.editor {
+	width:700px;
+	margin: auto;
+}
