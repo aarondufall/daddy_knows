@@ -6,6 +6,11 @@ textarea {
     color: #222;
 }
 
+input {
+	height: 20px;
+	margin-bottom: 10px;
+}
+
 ul {
 	list-style: none;
 }
@@ -47,6 +52,7 @@ nav ul li {
 }
 
 header a {
+	color: #444;
 	text-decoration: none;
 }
 
@@ -62,6 +68,7 @@ header a {
 .editor {
 	width:700px;
 	margin: auto;
+	clear: both;
 }
 
 .question_info {
