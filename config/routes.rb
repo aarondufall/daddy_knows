@@ -4,6 +4,12 @@ DaddyKnows::Application.routes.draw do
   #TODO: Change to question index 
   root :to => "questions#index" 
 
+  #Posts
+
+  get '/tags' => 'tags#index'
+
+  get 'question/:name/tags/' =>  'tags#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
