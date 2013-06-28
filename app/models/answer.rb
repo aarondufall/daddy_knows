@@ -10,10 +10,14 @@ class Answer < ActiveRecord::Base
 
 
   validates :content, :presence => true
-  validate :not_empty
 
-  def not_empty
-  	errors.add(:content, "Must not be empty") if content == "<br>"
+  before_validation :trim_wysiwyg
+
+  private
+  #the wysiwyg submits a <br> tag even when content is empty this cleans that up before validation
+  def trim_wysiwyg
+    content.gsub!(/^<br>?(.*)/, '\1')
   end
+  
 
 end
