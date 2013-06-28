@@ -1,0 +1,20 @@
+<div class="question-content">
+	<h1><%= @question.title %></h1>
+	<hr>
+	<div class="question-body">
+		<%= raw @question.content %>
+	</div>
+	<div class="answer">
+		<% @answers.each do |answer| %>
+			<%= raw answer.content %>
+			<hr>
+		<% end %>
+	</div>
+	<div class="editor">
+		<%= form_for @answer, url: [@question, @answer]  do |f| %>
+			<%= f.label "Answer" %>
+			<%= f.text_area :content, :class => "tinymce", :rows => 20, :cols => 98 %>
+			<%= f.submit %>
+		<% end %>
+	</div>
+</div>
