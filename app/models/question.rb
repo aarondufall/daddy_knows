@@ -18,6 +18,12 @@ class Question < ActiveRecord::Base
     self.title.capitalize!
   end
 
-	
+  def tag_tokens=(tag_ids)
+    self.tags.delete_all
+    self.tags << tag_ids.split(",").map { |id| Tag.find_or_create_by_id(id.to_i) }
+  end
 
+  def tag_tokens
+    tags.map &:to_autocomplete_hash
+  end
 end
