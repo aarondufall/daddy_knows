@@ -135,8 +135,6 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     thor (0.18.1)
     tilt (1.4.1)
-    tinymce-rails (4.0)
-      railties (>= 3.1.1)
     treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
@@ -170,6 +168,5 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   selenium-webdriver
   shoulda-matchers
-  tinymce-rails
   turbo-sprockets-rails3
   uglifier (>= 1.0.3)
