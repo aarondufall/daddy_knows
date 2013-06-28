@@ -11,9 +11,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-
-#ActiveRecord::Schema.define(:version => 20130627202851) do
-
 ActiveRecord::Schema.define(:version => 20130627213501) do
 
   create_table "answers", :force => true do |t|
