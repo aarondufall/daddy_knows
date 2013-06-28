@@ -7,6 +7,7 @@ class Question < ActiveRecord::Base
   has_many :question_tags
   has_many :tags, :through => :question_tags
   has_many :comments, as: :commentable
+  has_many :votes, :as => :votable
 
   validates :title, :content, :presence => true
   

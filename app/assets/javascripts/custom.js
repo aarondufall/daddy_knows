@@ -1,7 +1,3 @@
 $(document).ready(function(){
-	tinyMCE.init({
-	      mode : "textareas",
-	      menubar: 'edit view',
-	      statusbar: false
-	});
+	 bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
 });
