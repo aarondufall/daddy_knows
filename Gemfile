@@ -18,14 +18,14 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
+  gem 'turbo-sprockets-rails3'
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
-gem 'nokogiri', '1.5.9'
 
 group :test, :development do
+	gem 'nokogiri', '1.5.9'
 	gem 'rspec-rails'
 	gem 'factory_girl_rails'
 	gem 'faker'
