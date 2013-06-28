@@ -5,7 +5,7 @@ class AnswersController < ApplicationController
 		if @answer.save
 			redirect_to @question, notice: "Answer succesfully submitted"
 		else
-			render "questions/show"
+			redirect_to @question, notice: "Failed to save answer"
 		end
 	end
 end

@@ -3,6 +3,12 @@ class QuestionsController < ApplicationController
 		@questions = Question.all
 	end
 
+	def show
+		@question = Question.find(params[:id])
+		@answers = @question.answers
+		@answer = Answer.new
+	end
+
 	def new
 		@question = Question.new
 	end
@@ -15,4 +21,5 @@ class QuestionsController < ApplicationController
 			render :new
 		end
 	end
+
 end

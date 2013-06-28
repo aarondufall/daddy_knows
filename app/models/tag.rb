@@ -15,5 +15,4 @@ class Tag < ActiveRecord::Base
         title: title,
       }
   end
-	
 end

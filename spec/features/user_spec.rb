@@ -11,10 +11,10 @@ describe "the signup process", :js => true do
       fill_in 'Email', :with => 'rod@rod.com'
       fill_in 'user_password', :with => 'rodrodrodrod'
       fill_in 'user_password_confirmation', :with => 'rodrodrodrod'
-      sleep(3)
+      sleep(1)
     # end
     click_on 'Sign up'
-          sleep(5)
+          sleep(2)
 
     expect(page).to have_content 'Welcome!'
   end
