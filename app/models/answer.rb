@@ -10,5 +10,10 @@ class Answer < ActiveRecord::Base
 
 
   validates :content, :presence => true
+  validate :not_empty
+
+  def not_empty
+  	errors.add(:content, "Must not be empty") if content == "<br>"
+  end
 
 end
