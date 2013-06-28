@@ -4,6 +4,9 @@
 	<div class="question-body">
 		<%= raw @question.content %>
 	</div>
+
+	<%= render partial: 'question', locals: { question: @question } %>
+
 	<div class="answer">
 		<% @answers.each do |answer| %>
 			<%= raw answer.content %>

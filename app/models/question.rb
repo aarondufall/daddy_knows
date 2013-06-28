@@ -19,6 +19,8 @@ class Question < ActiveRecord::Base
     self.title.capitalize!
   end
 
-	
+	def votes
+    votes.sum(:value)
+  end
 
 end
