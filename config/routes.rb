@@ -2,9 +2,11 @@ DaddyKnows::Application.routes.draw do
 
   #TODO: Change to question index 
   root :to => "questions#index"
+
+  resources :votes
+  
   devise_for :users
   resources :questions do
-    member { post :vote }
     resources :answers
   end
 
