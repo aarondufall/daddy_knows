@@ -140,6 +140,9 @@ GEM
     treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
+    turbo-sprockets-rails3 (0.3.6)
+      railties (> 3.2.8, < 4.0.0)
+      sprockets (>= 2.0.0)
     tzinfo (0.3.37)
     uglifier (2.1.1)
       execjs (>= 0.3.0)
@@ -168,4 +171,5 @@ DEPENDENCIES
   selenium-webdriver
   shoulda-matchers
   tinymce-rails
+  turbo-sprockets-rails3
   uglifier (>= 1.0.3)
